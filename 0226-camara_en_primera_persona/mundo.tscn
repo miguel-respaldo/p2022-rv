@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://plataforma.tscn" type="PackedScene" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" parent="." instance=ExtResource( 1 )]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.428179, 0, -0.258192, -0.137035, 0.423765, -0.227255, 0.218825, 0.265374, 0.362894, -1.7405, 1.85787, 2.794 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( -0.0597325, -0.249474, -0.429179, 0.48242, 0.0727629, -0.109438, 0.117061, -0.427163, 0.23201, 3.39585, 2.70225, 2.794 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="."]
+transform = Transform( -0.0853048, -0.219611, -0.0836298, 0.172643, 0.0017923, -0.180807, 0.159429, -0.119447, 0.151046, 1.83719, 2.25238, -2.30399 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../MeshInstance2")
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance" parent="."]
+transform = Transform( -0.179811, -0.0246214, -0.171936, 0.172643, 0.0017923, -0.180807, 0.0190395, -0.248778, 0.0157137, -1.95701, 2.25238, -2.30399 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../MeshInstance2")
+material/0 = null
