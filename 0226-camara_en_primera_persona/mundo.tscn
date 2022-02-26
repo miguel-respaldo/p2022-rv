@@ -14,7 +14,7 @@ mesh = SubResource( 1 )
 material/0 = null
 
 [node name="MeshInstance2" type="MeshInstance" parent="."]
-transform = Transform( -0.0597325, -0.249474, -0.429179, 0.48242, 0.0727629, -0.109438, 0.117061, -0.427163, 0.23201, 3.39585, 2.70225, 2.794 )
+transform = Transform( -0.0597325, -0.249474, -0.429179, 0.48242, 0.0727629, -0.109438, 0.117061, -0.427163, 0.23201, 2.81321, 1.86355, 2.40172 )
 mesh = SubResource( 1 )
 material/0 = null
 
@@ -26,6 +26,12 @@ material/0 = null
 
 [node name="MeshInstance4" type="MeshInstance" parent="."]
 transform = Transform( -0.179811, -0.0246214, -0.171936, 0.172643, 0.0017923, -0.180807, 0.0190395, -0.248778, 0.0157137, -1.95701, 2.25238, -2.30399 )
+mesh = SubResource( 1 )
+skeleton = NodePath("../MeshInstance2")
+material/0 = null
+
+[node name="Pedro" type="MeshInstance" parent="."]
+transform = Transform( 0.0248077, 0.047157, 0.032666, -0.0341762, 0.0407333, -0.0328488, -0.0460741, -0.00482389, 0.0419541, 4.09035, 5.44703, 5.62774 )
 mesh = SubResource( 1 )
 skeleton = NodePath("../MeshInstance2")
 material/0 = null
