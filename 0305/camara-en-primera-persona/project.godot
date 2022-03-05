@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Camara-en-primera-persona"
+run/main_scene="res://nivel.tscn"
 config/icon="res://icon.png"
 
 [physics]
