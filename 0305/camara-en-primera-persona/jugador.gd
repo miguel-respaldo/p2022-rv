@@ -2,9 +2,8 @@ extends KinematicBody
 
 
 # Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+export var h_sensibilidad = 0.0005
+export var v_sensibilidad = 0.001
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
