@@ -4,6 +4,14 @@
 
 [node name="Spatial" type="Spatial"]
 
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 30, 0 )
+light_energy = 0.4
+shadow_enabled = true
+
+[node name="StaticBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, 0, 0 )
+
 [node name="Cubos" type="Spatial" parent="."]
 
 [node name="centro" parent="Cubos" instance=ExtResource( 1 )]
@@ -23,6 +31,3 @@ transform = Transform( 0.965409, 0.260177, -0.0171123, -0.25991, 0.965495, 0.016
 
 [node name="cubo6" parent="Cubos" instance=ExtResource( 1 )]
 transform = Transform( 0.315117, 0.0688342, 0.946553, -0.25991, 0.965495, 0.016315, -0.912769, -0.25116, 0.322134, 35.5426, 10, 35.5511 )
-
-[node name="StaticBody" parent="." instance=ExtResource( 1 )]
-transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, 0, 0 )
