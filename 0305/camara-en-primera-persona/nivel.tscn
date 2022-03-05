@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://plataforma.tscn" type="PackedScene" id=1]
 [ext_resource path="res://jugador.tscn" type="PackedScene" id=2]
+
+[sub_resource type="PrismMesh" id=1]
 
 [node name="Spatial" type="Spatial"]
 
@@ -19,7 +21,7 @@ transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, 0, 0 )
 [node name="Cubos" type="Spatial" parent="."]
 
 [node name="centro" parent="Cubos" instance=ExtResource( 1 )]
-transform = Transform( 0.854473, 0.222088, 0.46963, -0.439176, 0.791693, 0.424673, -0.277488, -0.569122, 0.774016, 0, 10, 0 )
+transform = Transform( 0.855893, -0.512403, -0.0699209, 0.436402, 0.643073, 0.629294, -0.277488, -0.569122, 0.774016, 0, 10, 0 )
 
 [node name="cubo2" parent="Cubos" instance=ExtResource( 1 )]
 transform = Transform( 0.593816, 0.146486, 0.791154, -0.25991, 0.965495, 0.016315, -0.761465, -0.215317, 0.611399, -15.1889, 10, 24.7666 )
@@ -35,3 +37,11 @@ transform = Transform( 0.965409, 0.260177, -0.0171123, -0.25991, 0.965495, 0.016
 
 [node name="cubo6" parent="Cubos" instance=ExtResource( 1 )]
 transform = Transform( 0.315117, 0.0688342, 0.946553, -0.25991, 0.965495, 0.016315, -0.912769, -0.25116, 0.322134, 35.5426, 10, 35.5511 )
+
+[node name="cubo7" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.315117, 0.0688342, 0.946553, -0.25991, 0.965495, 0.016315, -0.912769, -0.25116, 0.322134, -44.4836, 10, -47.2313 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Cubos"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26951, 5.87702, -14.1423 )
+mesh = SubResource( 1 )
+material/0 = null
