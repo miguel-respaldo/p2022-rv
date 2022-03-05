@@ -4,5 +4,25 @@
 
 [node name="Spatial" type="Spatial"]
 
+[node name="Cubos" type="Spatial" parent="."]
+
+[node name="centro" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.854473, 0.222088, 0.46963, -0.439176, 0.791693, 0.424673, -0.277488, -0.569122, 0.774016, 0, 10, 0 )
+
+[node name="cubo2" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.593816, 0.146486, 0.791154, -0.25991, 0.965495, 0.016315, -0.761465, -0.215317, 0.611399, -15.1889, 10, 24.7666 )
+
+[node name="cubo3" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.593816, 0.146486, 0.791154, -0.25991, 0.965495, 0.016315, -0.761465, -0.215317, 0.611399, 17.3798, 10, 24.7666 )
+
+[node name="cubo4" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.965409, 0.260177, -0.0171123, -0.25991, 0.965495, 0.016315, 0.0207667, -0.011303, 0.99972, 29.5462, 10, -7.5333 )
+
+[node name="cubo5" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.965409, 0.260177, -0.0171123, -0.25991, 0.965495, 0.016315, 0.0207667, -0.011303, 0.99972, -13.1271, 10, -16.0343 )
+
+[node name="cubo6" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.315117, 0.0688342, 0.946553, -0.25991, 0.965495, 0.016315, -0.912769, -0.25116, 0.322134, 35.5426, 10, 35.5511 )
+
 [node name="StaticBody" parent="." instance=ExtResource( 1 )]
 transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, 0, 0 )
