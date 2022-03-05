@@ -18,7 +18,7 @@ light_energy = 0.4
 shadow_enabled = true
 
 [node name="StaticBody" parent="." instance=ExtResource( 1 )]
-transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, 0, 0 )
+transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 8.85506, -4.78325, -1.85993 )
 
 [node name="Cubos" type="Spatial" parent="."]
 
@@ -27,6 +27,9 @@ transform = Transform( 0.855893, -0.512403, -0.0699209, 0.436402, 0.643073, 0.62
 
 [node name="cubo2" parent="Cubos" instance=ExtResource( 1 )]
 transform = Transform( 0.593816, 0.146486, 0.791154, -0.25991, 0.965495, 0.016315, -0.761465, -0.215317, 0.611399, -15.1889, 10, 24.7666 )
+
+[node name="cubitoLuisMontes" parent="Cubos" instance=ExtResource( 1 )]
+transform = Transform( 0.593816, 0.146486, 0.791154, -0.25991, 0.965495, 0.016315, -0.761465, -0.215317, 0.611399, 33.553, -22.9901, 18.6754 )
 
 [node name="cubo3" parent="Cubos" instance=ExtResource( 1 )]
 transform = Transform( 0.593816, 0.146486, 0.791154, -0.25991, 0.965495, 0.016315, -0.761465, -0.215317, 0.611399, 17.3798, 10, 24.7666 )
