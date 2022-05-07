@@ -20,7 +20,7 @@ light_energy = 0.4
 shadow_enabled = true
 
 [node name="StaticBody" parent="." instance=ExtResource( 1 )]
-transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 8.85506, -4.78325, -1.85993 )
+transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 50, 8, 0, 0 )
 
 [node name="Cubos" type="Spatial" parent="."]
 
